@@ -1,0 +1,7 @@
+<md-card class="light">
+  <md-card-title>{{light.name}}</md-card-title>
+  <md-card-content>
+    <md-slide-toggle [checked]="light.state.on" (change)="toggleOnState(light)"></md-slide-toggle>
+    <md-slider max="254" [value]="light.state.bri" (change)="setBrightness($event, light)"></md-slider>
+  </md-card-content>
+</md-card>
